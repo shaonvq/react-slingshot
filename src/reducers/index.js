@@ -1,9 +1,9 @@
 // Set up your root reducer here...
- import { combineReducers } from 'redux';
- import {incrementCountReducer} from './incrementCountReducer';
+import { combineReducers } from "redux";
+import { countReducer } from "./countReducer";
 
 const rootReducer = combineReducers({
-    incrementCountReducer,
+  countReducer
 });
 
 export default rootReducer;

@@ -1,6 +1,6 @@
 /* eslint-disable import/no-named-as-default */
-import { NavLink, Route, Switch } from "react-router-dom";
-import Counter from "./containers/Counter";
+import { Route, Switch } from "react-router-dom";
+import Counter from "./containers/CounterPage";
 import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
@@ -13,12 +13,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <NavLink exact to="/">Home</NavLink>
-        </div>
+        <h1>meow</h1>
         <Switch>
           <Route exact path="/" component={Counter} />
-
         </Switch>
       </div>
     );
